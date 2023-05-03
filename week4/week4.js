@@ -45,9 +45,6 @@ function getElementAt(arrayParameter, numberParameter) {
   }
 }
 
-const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
-
-console.log(getElementAt(beasts, 2))
 
 // QUESTION 3: Write a function that takes one Array parameter, inserts the value `0` at the second position in the array, and returns the new Array
 
@@ -56,8 +53,9 @@ console.log(getElementAt(beasts, 2))
 //    should result in the next line appearing in your console...
 // [1, 0, 'a', 'test']
 
-function insertZeroInArray() {
-
+function insertZeroInArray(arrayParameter) {
+  arrayParameter.splice(1, 0, 0);
+  return arrayParameter;
 }
 
 
