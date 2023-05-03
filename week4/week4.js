@@ -20,8 +20,9 @@
 // console.log("testing out my function for Q1: ", isEmpty([1,"a","test"]));
 // false
 
+
 function isEmpty(entry) {
-  
+  return !entry.length
 }
 
 
