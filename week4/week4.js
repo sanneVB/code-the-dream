@@ -37,10 +37,17 @@ function isEmpty(entry) {
 // console.log("testing out my function for Q2: ", getElementAt([1,"a"], 2));
 // null
 
-function getElementAt() {
-
+function getElementAt(arrayParameter, numberParameter) {
+  if (arrayParameter[numberParameter] === undefined) {
+    return null
+  } else {
+    return arrayParameter[numberParameter]
+  }
 }
 
+const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
+
+console.log(getElementAt(beasts, 2))
 
 // QUESTION 3: Write a function that takes one Array parameter, inserts the value `0` at the second position in the array, and returns the new Array
 
