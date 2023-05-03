@@ -31,7 +31,7 @@ function isEmpty(entry) {
 // EXAMPLES:
 // console.log("testing out my function for Q2: ", getElementAt([1,"a","test"], 2));
 //    should result in the next line appearing in your console...
-// test
+//
 //
 // OR if you pass an number greater than the number of items in the array...
 // console.log("testing out my function for Q2: ", getElementAt([1,"a"], 2));
