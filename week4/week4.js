@@ -165,10 +165,12 @@ const findEvenNumbers = (parameter) => {
 // console.log("testing out my function for Q7: ", findOddNumbers([10,2,3,7,6,93]));
 //    should result in the next line appearing in your console...
 // [3,7,93]
-const findOddNumbers = () => {
 
+const findOddNumbers = (parameter) => {
+  return parameter.filter((element) => (!!(element % 2)))
 }
 
+// console.log("testing out my function for Q7: ", findOddNumbers([10,2,3,7,6,93, 'bella']));
 
 // QUESTION 8: Write a function that takes one Array parameter and returns a new Array with the squared values of each of the numbers
 // EXAMPLE: The squared value of 4 is 4^2 = 4 * 4 = 16
