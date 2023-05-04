@@ -181,11 +181,15 @@ const findOddNumbers = (parameter) => {
 //    should result in the next line appearing in your console...
 // [4,25,64]
 
-const squareNumbers = () => {
-
+const squareNumbers = (parameter) => {
+  if (parameter.every(element => Number.isInteger(element))) {
+    return parameter.map(x => x * x)
+  } else { 
+    return 'Not every element in the array is a number'
+  }
 }
 
-
+// console.log("testing out my function for Q8: ", squareNumbers([2,5,8, 'bella']));
 
 // QUESTION 9. STRETCH GOAL --- Back in the old days, the early 2000s, this was a famous technical interview question. Write a function definition that takes no parameters. The function will loop from 1 to 15 and return an array of numbers. While looping,the function will check if the current value in the loop is divisible by 3, 5, or by both. If the current value in the loop is divisible by 3, the function will add the string "Fizz" to an array. If the current value in the loop is divisible by 5, the function will add the string "Buzz" to the array. If the current value in the loop is divisible by both, the function will add the value "FizzBuzz" to the array. The function will return the array of values.
 
