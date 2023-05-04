@@ -71,8 +71,64 @@ function insertZeroInArray(arrayParameter) {
 // OR console.log("testing out my function for Q4: ", isEqual([1,2,3], [1,2,3]));
 // true
 
-function isEqual() {
+// Attempt number one
 
+/* 
+function isEqual(firstArray, secondArray) {
+  let equalCheck = true;
+  firstArray.forEach((element, index) => {
+    if (element !== secondArray[index]) {
+      equalCheck = false
+    }
+  });
+  return equalCheck
+}
+*/
+
+// Attempt number 2
+
+/* 
+let equalCheck = true
+
+function compare(element, index, arr) {
+  if (element !== arr[index]) {
+    equalCheck = false
+  }
+}
+
+function isEqual(firstArray, secondArray) {
+  firstArray.forEach((element, index) => compare(element, index, secondArray))
+  return equalCheck
+}
+*/
+
+// Attempt number three
+/*
+function compare(element, index, arr) {
+  return element === arr[index]
+}
+
+function isEqual(numberSetA, numberSetB) {
+  return numberSetA.every((element, index) => compare(element, index, numberSetB))
+}
+*/
+
+// Attempt number four
+/*
+function isEqual(numberSetA, numberSetB) {
+  return numberSetA.every((element, index) => (element === numberSetB[index]));
+}
+*/
+
+// Attempt number five
+
+function compare(first, second) {
+  return first.every((element, index) => (element === second[index]));
+}
+
+
+function isEqual(a, b) {
+  return(compare(a, b)&&compare(b, a));
 }
 
 
