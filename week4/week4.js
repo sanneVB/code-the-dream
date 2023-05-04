@@ -198,10 +198,47 @@ const squareNumbers = (parameter) => {
 //    should result in the next line appearing in your console...
 // [1,2,'Fizz',4,'Buzz','Fizz',7,8,'Fizz','Buzz',11,'Fizz',13,14,'FizzBuzz']
 
-const fizzBuzz = () => {
+// Attempt 1
 
+/*
+const fizzBuzz = () => {
+  let numberList = []
+  for (let i = 1; i <= 15; i++) {
+    let randomNumber = (Math.ceil(Math.random()*15))
+    if (!(randomNumber % 3)&&(!(randomNumber % 5))) {
+      numberList.push('FizzBuzz')
+    } else if (!(randomNumber % 5)) {
+      numberList.push('Buzz')
+    } else if (!(randomNumber % 3)) {
+      numberList.push('Fizz')
+    } else {
+      numberList.push(randomNumber)
+    }
+  }
+  return numberList
+}  
+*/
+
+// Attempt 2
+
+const fizzBuzz = () => {
+  let numberList = []
+  for (let i = 1; i <= 15; i++) {
+    if (!(i % 3)&&(!(i % 5))) {
+      numberList.push('FizzBuzz')
+    } else if (!(i % 5)) {
+      numberList.push('Buzz')
+    } else if (!(i % 3)) {
+      numberList.push('Fizz')
+    } else {
+      numberList.push(i)
+    }
+  }
+  return numberList
 }
 
+
+console.log(fizzBuzz())
 
 
 // DO NOT EDIT BELOW THIS LINE
