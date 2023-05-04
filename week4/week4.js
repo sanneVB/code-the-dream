@@ -139,6 +139,7 @@ function isEqual(a, b) {
 // console.log("testing out my function for Q5: ", calculateArraySum([10,2,3]));
 //    should result in the next line appearing in your console...
 // 15
+
 const calculateArraySum = (parameter) => {
   return parameter.reduce((accumulator, currentValue) => currentValue + accumulator);
 }
@@ -151,9 +152,11 @@ const calculateArraySum = (parameter) => {
 //    should result in the next line appearing in your console...
 // [10,2,6]
 
-const findEvenNumbers = () => {
-
+const findEvenNumbers = (parameter) => {
+  return parameter.filter((element) => (!(element % 2) && (Number.isInteger(element))))
 }
+
+// console.log("testing out my function for Q6: ", findEvenNumbers([10,2,3,7,6,93, 'bella']));
 
 // QUESTION 7: Write a function that takes one Array parameter and returns a new Array of all the odd numbers
 // BONUS: use the `filter()` method
