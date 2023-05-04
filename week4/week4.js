@@ -139,11 +139,9 @@ function isEqual(a, b) {
 // console.log("testing out my function for Q5: ", calculateArraySum([10,2,3]));
 //    should result in the next line appearing in your console...
 // 15
-
-const calculateArraySum = () => {
-
+const calculateArraySum = (parameter) => {
+  return parameter.reduce((accumulator, currentValue) => currentValue + accumulator);
 }
-
 
 // QUESTION 6: Write a function that takes one Array parameter and returns a new Array of all the even numbers
 // BONUS: use the `filter()` method
@@ -156,7 +154,6 @@ const calculateArraySum = () => {
 const findEvenNumbers = () => {
 
 }
-
 
 // QUESTION 7: Write a function that takes one Array parameter and returns a new Array of all the odd numbers
 // BONUS: use the `filter()` method
@@ -182,6 +179,7 @@ const findOddNumbers = () => {
 const squareNumbers = () => {
 
 }
+
 
 
 // QUESTION 9. STRETCH GOAL --- Back in the old days, the early 2000s, this was a famous technical interview question. Write a function definition that takes no parameters. The function will loop from 1 to 15 and return an array of numbers. While looping,the function will check if the current value in the loop is divisible by 3, 5, or by both. If the current value in the loop is divisible by 3, the function will add the string "Fizz" to an array. If the current value in the loop is divisible by 5, the function will add the string "Buzz" to the array. If the current value in the loop is divisible by both, the function will add the value "FizzBuzz" to the array. The function will return the array of values.
