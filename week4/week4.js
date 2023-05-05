@@ -64,9 +64,9 @@ function getElementAt(list, number) {
 //    should result in the next line appearing in your console...
 // [1, 0, 'a', 'test']
 
-function insertZeroInArray(arrayParameter) {
-  arrayParameter.splice(1, 0, 0);
-  return arrayParameter;
+function insertZeroInArray(list) {
+  list.splice(1, 0, 0);
+  return list;
 }
 
 
