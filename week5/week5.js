@@ -91,8 +91,9 @@ const library = [
 //   { title: 'Alchemist', author: 'Paulo Coelho', libraryID: 4266 }
 // ]
 
-const sortArray = () => {
- 
+
+const sortArray = (list) => {
+  return list.toSorted((a,b) => a.libraryID - b.libraryID)
 }
 
 
