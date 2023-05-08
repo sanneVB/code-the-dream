@@ -14,11 +14,13 @@
 const myBunny = {
   species: 'rabbit',
   message: "I'm a bunny, hear me roar!",
+  name: "some value",
 }
 
 // Next, assign the "name" property from "myBunny" object to the "bunnyName" variable below
 
 let bunnyName;
+
 
 //NO EXAMPLE for Question 1 as the output would give away the answers
 
@@ -33,7 +35,6 @@ let bunnyName;
 myBunny.speak = function() {
   
 }
-
 
 // QUESTION 3: Write a function called "isAnimalSpecies" that takes one Object parameter ("animal") and one String parameter ("species") and returns true if the Object's species property is equal to the String parameter, false if not
 
