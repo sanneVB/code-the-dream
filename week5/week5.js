@@ -46,10 +46,7 @@ myBunny.speak = function() {
 // OR console.log("testing out my function for Q3: ", isAnimalSpecies(myBunny, 'rabbit'));
 // true
 
-const isAnimalSpecies = (animal, species) => {
-
-}
-
+const isAnimalSpecies = (animal, species) => (animal.species === species);
 
 
 // DO NOT EDIT THIS VARIABLE!! - it is used for the Questions 4 through 6
