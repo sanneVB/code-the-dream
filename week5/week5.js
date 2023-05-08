@@ -19,7 +19,7 @@ const myBunny = {
 
 // Next, assign the "name" property from "myBunny" object to the "bunnyName" variable below
 
-let bunnyName;
+let bunnyName = myBunny['name'];
 
 
 //NO EXAMPLE for Question 1 as the output would give away the answers
