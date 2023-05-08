@@ -33,7 +33,7 @@ let bunnyName = myBunny['name'];
 // My name is Thumper. I'm a bunny, hear me roar!
 
 myBunny.speak = function() {
-  
+  return `My name is ${this.name}. ${this.message}`;
 }
 
 // QUESTION 3: Write a function called "isAnimalSpecies" that takes one Object parameter ("animal") and one String parameter ("species") and returns true if the Object's species property is equal to the String parameter, false if not
