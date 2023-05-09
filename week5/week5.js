@@ -97,6 +97,8 @@ const sortArray = (list) => {
 }
 
 
+
+
 // QUESTION 5: Write a function called "addTypeProperty" that takes one Array parameter and returns a new Array where each Object has a new property called "type" with value "book"
 // BONUS: use `map()` method
 
@@ -130,8 +132,12 @@ const sortArray = (list) => {
 //   }
 // ]
 
-const addTypeProperty = () => {
-  
+const addTypeProperty = (list) => {
+  const newList = list.map((x) => {
+    x['type'] = 'book';
+    return x
+  })
+  return newList
 }
 
 
