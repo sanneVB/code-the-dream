@@ -92,11 +92,15 @@ const library = [
 // ]
 
 
+// const sortArray = (list) => {
+//   return list.toSorted((a,b) => a.libraryID - b.libraryID)
+// }
+
+// Adding a version that will work in replit seeing toSorted isn't supported by it yet.
+
 const sortArray = (list) => {
-  return list.toSorted((a,b) => a.libraryID - b.libraryID)
+  return list.sort((a,b) => a.libraryID - b.libraryID)
 }
-
-
 
 
 // QUESTION 5: Write a function called "addTypeProperty" that takes one Array parameter and returns a new Array where each Object has a new property called "type" with value "book"
