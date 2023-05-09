@@ -160,8 +160,9 @@ const addTypeProperty = (list) => {
 //   { title: 'The Wizard of Oz', author: 'L. Frank Baum', libraryID: 9876 }
 // ]
 
-const addNewObject = () => {
-  
+const addNewObject = (libraryInventory, newBook) => {
+  libraryInventory.push(newBook)
+  return libraryInventory
 }
 
 
